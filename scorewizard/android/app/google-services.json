@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90632323398",
+    "project_id": "scorewizard-3d1e9",
+    "storage_bucket": "scorewizard-3d1e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90632323398:android:3134a55b85246ce906a547",
+        "android_client_info": {
+          "package_name": "com.example.scorewizard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAas8NiRgoAKZ2rOY_0TXGfzMT27LiSGo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

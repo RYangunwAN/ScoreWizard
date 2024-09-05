@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-ExtraBold.ttf') format('ttf'), 
+}
+
+@keyframes slideIn {
+    from {
+        top: -100px; /* Same as the initial top value */
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0%;
+        left: 60px; /* Same as the initial top value */
+    }
+    to {
+        opacity: 100%;
+        left: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0%;
+        right: 60px; /* Same as the initial top value */
+    }
+    to {
+        opacity: 100%;
+        right: 0;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    width: 1920px;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    margin-left: 174px;
+    margin-right: 176px;
+}
+
+.column {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#column1 {
+    opacity: 0;
+    position: relative;
+    animation: slideLeft 2s forwards;
+    animation-delay: 1s;
+}
+
+#column2 {
+    top: -100px;
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+
+#column3 {
+    opacity: 0;
+    position: relative;
+    animation: slideRight 2s forwards;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sub-container1 {
+    margin-right: -8px;
+}
+
+#sub-container3 {
+    margin-left: -8px;
+}
+
+.sub-column {
+    flex: 1;
+    padding: 0;
+    position: relative;
+}
+
+#p1Team {
+    margin-right: -24px;
+    right: -21px;
+    position: relative;
+}
+
+#p2Team img{
+    margin-right: 12px;
+}
+
+#p2Team {
+    margin-left: -24px;
+    left: -21px;
+    position: relative;
+}
+
+#p1Name {
+    margin-right: 8px;
+    position: relative;
+}
+
+#p1Score {
+    margin-right: -1px;
+    position: relative;
+}
+
+#p2Score {
+    margin-left: -1px;
+    position: relative;
+}
+
+#p2Name {
+    margin-left: 8px;
+    position: relative;
+}
+
+#stage {
+    top: -12px;
+    position: relative;
+}
+
+#p1TeamStack {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+#p1TeamNameStack {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    left: 60px;
+    top: 2px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+#p2TeamStack {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+#p2TeamNameStack {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    right: 72px;
+    top: 2px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+#p1NameStack{
+    text-align: right;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: -8px;
+    height: 50px;
+    width: 326px;
+}
+
+#p2NameStack{
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: -8px;
+    height: 326px;
+    width: 50px;
+}
+
+#p1ScoreStack {
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    left: 21px;
+}
+
+#p2ScoreStack {
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    right: 21px;
+}
+
+#stageStack {
+    font-family: "Montserrat";
+    text-align: center;
+    width: 492px;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: -14px;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards; /* Adjust duration as needed */
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards; /* Adjust duration as needed */
+}

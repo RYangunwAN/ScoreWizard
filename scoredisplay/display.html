@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firestore Real-Time Data with Columns</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column" id="column1">
+                <div class="sub-container" id="sub-container1">
+                    <div class="sub-column" id="p1Team">
+                        <img src="assets/scoreboard/p1Team.png">
+                        <img class="p1TeamLogo" id="p1TeamStack">
+                        <p id="p1TeamNameStack"></p>
+                    </div>
+                    <div class="sub-column" id="p1Name">
+                        <img src="assets/scoreboard/p1Name.png">
+                        <p id="p1NameStack"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="column2">
+                <div class="sub-container" id="sub-container2">
+                    <div class="sub-column" id="p1Score">
+                        <img src="assets/scoreboard/p1Score.png">
+                        <p id="p1ScoreStack"></p>
+                    </div>
+                    <div class="sub-column" id="stage">
+                        <img src="assets/scoreboard/stage.png">
+                        <p id="stageStack"></p>
+                    </div>
+                    <div class="sub-column" id="p2Score">
+                        <img src="assets/scoreboard/p2Score.png">
+                        <p id="p2ScoreStack"></p>
+                    </div>
+                </div></div>
+            <div class="column" id="column3">
+                <div class="sub-container" id="sub-container3">
+                    <div class="sub-column" id="p2Name">
+                        <img src="assets/scoreboard/p2Name.png">
+                        <p id="p2NameStack"></p>
+                    </div>
+                    <div class="sub-column" id="p2Team">
+                        <img src="assets/scoreboard/p2Team.png">
+                        <p id="p2TeamNameStack"></p>
+                        <img class="p2TeamLogo" id="p2TeamStack">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
